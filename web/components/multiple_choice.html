@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <element name="x-multiple-choice" extends="div" constructor="MultipleChoice">
+      <template>
+        <div style="border: 1px solid black">
+          <content select="h2"></content>
+          <ol>
+            <content select="x-choice"></content>
+          </ol>
+        </div>
+      </template>
+    </element>
+    
+    <element name="x-choice" extends="li" constructor="Choice">
+      <template>
+        <li>
+          <label><input type="radio"><content></content></label>
+        </li>
+      </template>
+      <script type="application/dart" src="choice.dart"></script>
+    </element>
+  </body>
+</html>

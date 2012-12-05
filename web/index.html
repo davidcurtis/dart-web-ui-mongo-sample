@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dart Survey</title>
+    <link rel="stylesheet" href="dart_mongo_sample.css">
+    <link rel="components" href="components/survey.html">
+    <link rel="components" href="components/multiple_choice.html">
+  </head>
+  <body>
+    <h1>Please take our survey</h1>
+    
+    <x-survey>
+      <x-multiple-choice id="q01">
+        <h2>What Dart features do you like?</h2>
+        <x-choice>Optional static types</x-choice>
+        <x-choice>Classes</x-choice>
+        <x-choice>Top-level functions</x-choice>
+        <x-choice>noSuchMethod</x-choice>
+        <x-choice>Libraries</x-choice>
+        <x-choice>Optional parameters</x-choice>
+      </x-multiple-choice>
+      
+      <x-range from="1" to="5">
+        <h2>What is your experience using Dart?</h2>
+      </x-range>
+    </x-survey>
+
+    <script type="application/dart" src="app.dart"></script>
+    <script type="text/javascript" src="dart.js"></script>
+  </body>
+</html>

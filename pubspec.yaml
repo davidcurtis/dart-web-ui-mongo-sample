@@ -1,0 +1,7 @@
+name:  dart_mongo_sample
+description:  A sample application
+
+dependencies:
+  mongo_dart:
+    git: git://github.com/sethladd/mongo_dart.git
+  web_components: any
